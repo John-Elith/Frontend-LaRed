@@ -1,16 +1,54 @@
-# React + Vite
+# Frontend de la Aplicación de Créditos "La Red"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el frontend para la aplicación de gestión de créditos "La Red". La aplicación permite administrar clientes, negocios, pagos y usuarios del sistema.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto está construido con las siguientes tecnologías:
 
-## React Compiler
+*   **React:** Biblioteca para construir interfaces de usuario.
+*   **Vite:** Herramienta de desarrollo para proyectos de frontend modernos.
+*   **Material-UI (MUI):** Framework de componentes de UI para React.
+*   **React Router:** Para la navegación y el enrutamiento en la aplicación.
+*   **Axios:** Cliente HTTP para realizar peticiones a la API.
+*   **Formik:** Para la gestión de formularios.
+*   **Yup:** Para la validación de esquemas de datos.
+*   **JWT Decode:** Para decodificar tokens de autenticación JWT.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Pasos para Ejecutar el Proyecto
 
-## Expanding the ESLint configuration
+Sigue estos pasos para levantar el entorno de desarrollo local:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/John-Elith/Frontend-LaRed.git
+    cd creditos-lared-frontend
+    ```
+
+2.  **Instalar dependencias:**
+    Asegúrate de tener [Node.js](https://nodejs.org/) instalado. Luego, ejecuta el siguiente comando en la raíz del proyecto para instalar las dependencias necesarias:
+    ```bash
+    npm install
+    ```
+
+3.  **Configurar las variables de entorno:**
+    Crea un archivo `.env` en la raíz del proyecto y añade las variables de entorno necesarias. Por ejemplo:
+    ```
+    VITE_API_URL=http://localhost:3000/api
+    ```
+
+4.  **Ejecutar el servidor de desarrollo:**
+    Una vez instaladas las dependencias, puedes iniciar la aplicación con:
+    ```bash
+    npm run dev
+    ```
+    La aplicación estará disponible en `http://localhost:5173` (o el puerto que Vite asigne).
+
+## Scripts Disponibles
+
+En el archivo `package.json` encontrarás los siguientes scripts:
+
+*   `npm run dev`: Inicia el servidor de desarrollo.
+*   `npm run build`: Compila la aplicación para producción.
+*   `npm run lint`: Ejecuta el linter para revisar el código.
+*   `npm run preview`: Sirve la aplicación compilada localmente.
